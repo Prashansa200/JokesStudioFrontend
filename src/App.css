@@ -7991,10 +7991,10 @@
 
 /* Partner auth modal polish + reduced width */
 .partner-modal.partner-modal-auth {
-  width: min(82vw, 600px) !important;
-  max-width: 600px !important;
+  width: min(88vw, 520px) !important;
+  max-width: 520px !important;
   border-radius: 24px !important;
-  padding: 1.35rem 1.5rem 1.15rem !important;
+  padding: 1.5rem 1.5rem 1.25rem !important;
 }
 
 .partner-modal.partner-modal-auth .partner-auth-container {
@@ -8114,6 +8114,142 @@
     width: 28px;
     height: 28px;
     font-size: 1.4rem;
+  }
+}
+
+/* Specific mobile optimization for partner auth modal */
+@media (max-width: 600px) {
+  .partner-modal.partner-modal-auth {
+    width: 92vw !important;
+    max-width: 92vw !important;
+    padding: 1.25rem 1.1rem !important;
+    border-radius: 18px !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-signup-view h2,
+  .partner-modal.partner-modal-auth .partner-login-view h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .auth-subtitle {
+    font-size: 0.88rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form {
+    gap: 0.85rem;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form input {
+    min-height: 50px;
+    padding: 0.65rem 1rem 0.65rem 2.6rem !important;
+    font-size: 0.9rem !important;
+    border-radius: 14px;
+  }
+
+  .partner-modal.partner-modal-auth .premium-action-btn {
+    min-height: 50px;
+    font-size: 0.9rem !important;
+    padding: 0.95rem 1.25rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .modal-close-v3 {
+    width: 26px;
+    height: 26px;
+    top: 0.85rem;
+    right: 0.85rem;
+  }
+}
+
+/* Extra small mobile optimization */
+@media (max-width: 480px) {
+  .modal-overlay {
+    padding: 1rem;
+    align-items: flex-end;
+  }
+
+  .partner-modal.partner-modal-auth {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.25rem 1rem !important;
+    border-radius: 20px 20px 0 0 !important;
+    margin: 0;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-container {
+    max-width: 100%;
+  }
+
+  .partner-modal.partner-modal-auth .partner-signup-view,
+  .partner-modal.partner-modal-auth .partner-login-view {
+    max-width: 100%;
+  }
+
+  .partner-modal.partner-modal-auth .partner-signup-view h2,
+  .partner-modal.partner-modal-auth .partner-login-view h2 {
+    font-size: 1.35rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .auth-subtitle {
+    font-size: 0.85rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form {
+    gap: 0.9rem;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form input {
+    min-height: 52px;
+    padding: 0.75rem 1rem 0.75rem 2.8rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 16px;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form .input-icon {
+    left: 1.3rem;
+  }
+
+  .partner-modal.partner-modal-auth .premium-action-btn {
+    min-height: 52px;
+    font-size: 0.95rem !important;
+    padding: 1rem 1.5rem !important;
+    border-radius: 16px;
+  }
+
+  .partner-modal.partner-modal-auth .auth-switch {
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .partner-modal.partner-modal-auth .modal-close-v3 {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 28px;
+    height: 28px;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .partner-modal.partner-modal-auth {
+    padding: 1.15rem 0.9rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-signup-view h2,
+  .partner-modal.partner-modal-auth .partner-login-view h2 {
+    font-size: 1.2rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .auth-subtitle {
+    font-size: 0.8rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form input {
+    padding: 0.65rem 0.85rem 0.65rem 2.5rem !important;
+    font-size: 0.88rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .premium-action-btn {
+    font-size: 0.88rem !important;
   }
 }
 
