@@ -7212,23 +7212,63 @@
 
   /* Partner modal */
   .partner-modal {
-    width: 100% !important;
+    width: 96% !important;
     border-radius: 20px !important;
-    padding: 1.25rem 1rem !important;
+    padding: 1.5rem 1.25rem !important;
+  }
+
+  .partner-modal.partner-modal-auth {
+    width: 96% !important;
+    max-width: 96% !important;
+    padding: 1.25rem 1.15rem !important;
   }
 
   .partner-signup-view h2,
   .partner-login-view h2 {
-    font-size: 1.25rem !important;
+    font-size: 1.5rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .auth-subtitle {
-    font-size: 0.78rem !important;
+    font-size: 0.9rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .partner-auth-form {
+    gap: 0.95rem;
   }
 
   .partner-auth-form input {
-    font-size: 0.85rem !important;
-    padding: 9px 10px 9px 2.75rem !important;
+    font-size: 0.92rem !important;
+    padding: 0.7rem 1rem 0.7rem 2.7rem !important;
+    height: 48px !important;
+    border-radius: 14px !important;
+    min-height: 48px;
+  }
+
+  .partner-auth-form .input-icon {
+    left: 1.2rem;
+    width: 18px;
+    height: 18px;
+  }
+
+  .premium-action-btn {
+    padding: 1rem 1.25rem !important;
+    font-size: 0.9rem !important;
+    height: 48px !important;
+    border-radius: 14px !important;
+  }
+
+  .auth-switch {
+    margin-top: 0.85rem;
+    font-size: 0.85rem;
+  }
+
+  .modal-close-v3 {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 28px;
+    height: 28px;
   }
 
   /* OTP */
@@ -7340,6 +7380,37 @@
     font-size: 1.1rem !important;
   }
 
+  .partner-modal.partner-modal-auth {
+    width: 96% !important;
+    max-width: 96% !important;
+    padding: 1.15rem 1rem !important;
+  }
+
+  .partner-signup-view h2,
+  .partner-login-view h2 {
+    font-size: 1.4rem !important;
+  }
+
+  .auth-subtitle {
+    font-size: 0.88rem;
+  }
+
+  .partner-auth-form input {
+    padding: 0.65rem 0.9rem 0.65rem 2.5rem !important;
+    font-size: 0.88rem !important;
+    height: 46px !important;
+  }
+
+  .partner-auth-form .input-icon {
+    left: 1.1rem;
+  }
+
+  .premium-action-btn {
+    padding: 0.95rem 1.15rem !important;
+    font-size: 0.88rem !important;
+    height: 46px !important;
+  }
+
   .bottom-nav {
     height: 56px;
   }
@@ -7384,6 +7455,25 @@
     height: 46px !important;
   }
 
+  .partner-modal.partner-modal-auth {
+    padding: 1.15rem 1rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form {
+    gap: 0.85rem;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form input {
+    padding: 0.65rem 1rem 0.65rem 2.6rem !important;
+    font-size: 0.85rem !important;
+    height: 44px !important;
+  }
+
+  .partner-modal.partner-modal-auth .premium-action-btn {
+    font-size: 0.85rem !important;
+    height: 44px !important;
+  }
+
   .bottom-nav {
     height: 52px;
   }
@@ -7426,6 +7516,21 @@
   }
 
   .gateway-form-v2 input:focus {
+    font-size: 16px;
+  }
+
+  /* Improved touch targets for partner auth form */
+  .partner-auth-form input {
+    min-height: 52px;
+    font-size: 16px;
+  }
+
+  .partner-auth-form input:focus {
+    font-size: 16px;
+  }
+
+  .partner-modal.partner-modal-auth .premium-action-btn {
+    min-height: 52px;
     font-size: 16px;
   }
 }
@@ -7956,22 +8061,59 @@
   .partner-modal.partner-modal-auth {
     width: min(92vw, 92vw) !important;
     max-width: 92vw !important;
-    padding: 1rem 0.95rem !important;
+    padding: 1.25rem 1.15rem !important;
     border-radius: 18px !important;
   }
 
   .partner-modal.partner-modal-auth .partner-signup-view h2,
   .partner-modal.partner-modal-auth .partner-login-view h2 {
-    font-size: 1.55rem !important;
+    font-size: 1.65rem !important;
+    margin-bottom: 0.5rem !important;
   }
 
   .partner-modal.partner-modal-auth .auth-subtitle {
-    font-size: 0.92rem;
+    font-size: 0.95rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form {
+    gap: 1rem;
   }
 
   .partner-modal.partner-modal-auth .partner-auth-form input {
     min-height: 52px;
+    border-radius: 16px;
+    padding: 0.75rem 1rem 0.75rem 2.8rem !important;
     font-size: 0.95rem;
+    border-color: rgba(255, 107, 0, 0.25) !important;
+  }
+
+  .partner-modal.partner-modal-auth .partner-auth-form .input-icon {
+    left: 1.25rem;
+    width: 20px;
+    height: 20px;
+  }
+
+  .partner-modal.partner-modal-auth .premium-action-btn {
+    min-height: 52px;
+    border-radius: 16px;
+    font-size: 0.95rem;
+    letter-spacing: 0.4px;
+    margin-top: 0.5rem;
+    padding: 1rem 1.5rem !important;
+  }
+
+  .partner-modal.partner-modal-auth .auth-switch {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .partner-modal.partner-modal-auth .modal-close-v3 {
+    top: 1rem;
+    right: 1rem;
+    width: 28px;
+    height: 28px;
+    font-size: 1.4rem;
   }
 }
 
